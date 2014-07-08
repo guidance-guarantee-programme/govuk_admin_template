@@ -146,7 +146,7 @@
     <p>Filters use bootstrap’s default <code>panel</code> styles in combination with the <code>nav-pill</code> navigation pattern. When no filters are active the <code>panel-body</code> isn’t present.</p>
   </div>
   <div class="col-md-6">
-    <div class="panel panel-default">
+    <div class="panel panel-default" data-module="filters">
       <header class="panel-heading">
         <ul class="nav nav-compact nav-pills">
           <li class="if-no-js-hide nav-pill-text">
@@ -159,6 +159,24 @@
             <ul class="dropdown-menu" role="menu">
               <li>
                 <a href="#">Filter options</a>
+              </li>
+            </ul>
+          </li>
+          <li class="if-no-js-hide">
+            <a href="#" class="filter-option" data-toggle="dropdown" role="button">
+              Filter with input <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right dropdown-text-input" role="menu">
+              <li>
+                <div class="form-group">
+                  <label>Input</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" />
+                    <span class="input-group-btn">
+                      <button class="btn btn-default">Button</button>
+                    </span>
+                  </div>
+                </div>
               </li>
             </ul>
           </li>
